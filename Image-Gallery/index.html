@@ -1,0 +1,89 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header class="gallery-header">
+        <h1>Image Gallery</h1>
+        <p>Explore our curated collection — filter by category, click to preview.</p>
+    </header>
+
+    <nav class="filter-nav">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="nature">Nature</button>
+        <button class="filter-btn" data-filter="cars">Cars</button>
+        <button class="filter-btn" data-filter="technology">Technology</button>
+        <button class="filter-btn" data-filter="architecture">Architecture</button>
+    </nav>
+
+    <main class="gallery-grid" id="gallery">
+        <!-- Nature -->
+        <div class="gallery-item" data-category="nature">
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800" alt="Mountain landscape" />
+        </div>
+        <div class="gallery-item" data-category="nature">
+            <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=800" alt="Green valley" />
+        </div>
+        <div class="gallery-item" data-category="nature">
+            <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800" alt="Forest path" />
+        </div>
+        <div class="gallery-item" data-category="nature">
+            <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800" alt="Misty mountains" />
+        </div>
+
+        <!-- Cars -->
+        <div class="gallery-item" data-category="cars">
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800" alt="Sports car" />
+        </div>
+        <div class="gallery-item" data-category="cars">
+            <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?w=800" alt="Red Ferrari" />
+        </div>
+        <div class="gallery-item" data-category="cars">
+            <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=800" alt="Luxury car" />
+        </div>
+        
+
+        <!-- Technology -->
+        <div class="gallery-item" data-category="technology">
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=800" alt="Circuit board" />
+        </div>
+        <div class="gallery-item" data-category="technology">
+            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800" alt="Laptop workspace" />
+        </div>
+        <div class="gallery-item" data-category="technology">
+            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800" alt="Cybersecurity" />
+        </div>
+        <div class="gallery-item" data-category="technology">
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=800" alt="Microchip" />
+        </div>
+
+        <!-- Architecture -->
+        <div class="gallery-item" data-category="architecture">
+            <img src="https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=800" alt="Modern building" />
+        </div>
+        <div class="gallery-item" data-category="architecture">
+            <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800" alt="Skyscraper" />
+        </div>
+        <div class="gallery-item" data-category="architecture">
+            <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800" alt="Glass building" />
+        </div>
+        <div class="gallery-item" data-category="architecture">
+            <img src="https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?w=800" alt="Bridge architecture" />
+        </div>
+    </main>
+
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose">&times;</button>
+        <button class="lightbox-nav prev" id="prevBtn">&#10094;</button>
+        <button class="lightbox-nav next" id="nextBtn">&#10095;</button>
+        <img class="lightbox-img" id="lightboxImg" src="" alt="" />
+        <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
